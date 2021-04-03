@@ -1,0 +1,184 @@
+/*!
+Theme Name: HappyKite Technical Test
+Theme URI: https://happykite.co.uk/
+Author: happykite
+Author URI: https://happykite.co.uk/
+Description: Happykite Technical Test Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hpy
+Tags:
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Variables
+# Mixins
+# Bootstrap
+# Typography
+# Elements
+# Forms
+# WordPress Defaults
+# Accessibility
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "components/normalize";
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "components/variables";
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@import "components/mixins";
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "bootstrap";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "components/setup/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "components/setup/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "components/setup/forms";
+
+/*--------------------------------------------------------------
+# WordPress Defaults
+--------------------------------------------------------------*/
+@import "components/wordpress/wordpress";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "components/setup/accessibility";
+
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+a{
+    color: $primary;
+}
+
+#masthead{
+    width: 100%;
+    background: #FFF;
+    padding: 3em 0;
+}
+
+.header-wrap{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    img{
+        max-width: 50px;
+    }
+    h1, p{
+        margin:0;
+        line-height: 1.2;
+    }
+    h1{
+        @include font-size( 26 );
+        font-weight:$bold;
+    }
+    p{
+        font-size:90%;
+        color:$secondary;
+        font-weight:$semibold;
+    }
+    .header-inner{
+        margin-left:1em;
+    }
+}
+
+#content{
+    padding: 3em 0;
+}
+
+.welcome-card{
+    display: flex;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom:3em;
+    h2{
+        color:$secondary;
+        text-transform: uppercase;
+        font-weight:$bold;
+    }
+}
+
+.card-left{ 
+    flex: 0 0 auto;
+    background: $primary;
+    padding: 1.2em;  
+}
+
+.card-right{
+    flex: 1 1 0px;
+    padding: 1.5em;
+}
+
+.happy-welcome{
+    text-align: center;
+    margin-bottom:2em;
+    h2{
+        text-transform: uppercase;
+        color: $secondary;
+    }
+}
+
+p.work-with-us{
+    text-align: center;
+    margin-bottom:8em;
+}
+
+.site-footer{
+    background: #535767;
+}
+
+.footer-top{
+    padding: 3em 0;
+    text-align: center;
+    color: #FFF;
+    h3{
+        color:$primary;
+        font-weight:$semibold;
+    }
+    p{
+        max-width:500px;
+        margin:0 auto;
+    }
+}
+
+.footer-nav{
+    background: #424655;
+    min-height: 4em;
+}
+
+/*!
+
+---------------------------------------------------------------
+Make your changes here
+---------------------------------------------------------------*/
